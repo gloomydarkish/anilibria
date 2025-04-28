@@ -1,13 +1,13 @@
-import { DefaultLayoutHeader } from '../../../widgets/DefaultLayout';
+import DefaultLayoutHeader from '../../../widgets/DefaultLayout/ui/Header';
 
-import stl from './index.model.scss';
+import stl from './index.module.scss';
 
-const DefaultLayout = ({ children }) => {
+const DefaultLayout = () => {
     return (
         <div className={stl.root}>
-            <DefaultLayoutHeader/>
+            <DefaultLayoutHeader />
         </div>
-    )
+    );
 };
 
 export default DefaultLayout;
