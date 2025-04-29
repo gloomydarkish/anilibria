@@ -1,0 +1,12 @@
+:root {
+  .root.light {
+    --header-bg: #fff;
+  }
+
+  .root.dark {
+    --header-bg: #000;
+    --header-logo-bg: #ff;
+
+    --root-bg: #121212
+  }
+}
