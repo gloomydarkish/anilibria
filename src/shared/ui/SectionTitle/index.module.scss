@@ -1,0 +1,33 @@
+.wrapper {
+    margin-bottom: 24px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        //&:hover {
+        //  .wrapper__link-icon {
+        //    transform: translateY(5%);
+        //  }
+        //}
+
+        svg {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover svg {
+            transform: translateX(10px);
+        }
+    }
+}
+
+.section-title {
+    font-size: 18px;
+    color: var(--txt-primery);
+  font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: var(--txt-secendery);
+}
