@@ -1,17 +1,18 @@
 import { useEffect, useState } from 'react';
 
+import ReleasesCard from './ui/Card';
+
 import stl from './index.module.scss';
 
 import HomeApi from '@/enitities/home/model/api/index.js';
 import SectionTitle from '@/shared/ui/SectionTitle/index.jsx';
-import ReleasesCard from '@/widgets/Home/ui/Releases/ui/Card/index.jsx';
 
 export const Releases = () => {
     const { fetchLatestReleases } = HomeApi();
     const [releases, setReleases] = useState([]);
 
     const getLatestReleases = async () => {
-        const data = fetchLatestReleases();
+        const data = await fetchLatestReleases();
 
         setReleases(data);
     };
@@ -28,7 +29,7 @@ export const Releases = () => {
             />
             <div className={stl.releases__wrapper}>
                 {releases.length > 0 &&
-                    releases.map((item, idx) => <ReleasesCard key={idx} release={item} />)}
+                    releases.map((item, idx) => <ReleasesCard key={idx} item={item} />)}
             </div>
         </div>
     );

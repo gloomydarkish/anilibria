@@ -7,7 +7,7 @@ const HomeApi = () => {
         try {
             const { data } = await axios.get(`${ApiPath.latestReleases}?limit=4`);
 
-            console.log(data);
+            return data;
         } catch (error) {
             console.log(error);
         }
