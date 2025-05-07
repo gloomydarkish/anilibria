@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HomeBanner, HomeReleases } from '@/widgets/Home/index.js';
+import { HomeBanner, HomeReleases, HomeSupport } from '@/widgets/Home/index.js';
 
 const Home = () => {
     return (
@@ -8,6 +8,7 @@ const Home = () => {
             <div className='page'>
                 <HomeBanner />
                 <HomeReleases />
+                <HomeSupport />
             </div>
         </div>
     );

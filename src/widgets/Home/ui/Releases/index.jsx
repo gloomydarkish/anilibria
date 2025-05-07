@@ -5,6 +5,7 @@ import ReleasesCard from './ui/Card';
 import stl from './index.module.scss';
 
 import HomeApi from '@/enitities/home/model/api/index.js';
+import RoutePath from '@/shared/constans/RoutePath/index.js';
 import SectionTitle from '@/shared/ui/SectionTitle/index.jsx';
 
 export const Releases = () => {
@@ -24,6 +25,7 @@ export const Releases = () => {
     return (
         <div className={stl.releases}>
             <SectionTitle
+                to={RoutePath.CATALOG}
                 title='Новые эпизоды'
                 subtitle='Самые новые и свежие эпизоды в любиимой озвучке'
             />
