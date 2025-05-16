@@ -1,0 +1,11 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    &__btn {
+        background: rgb(33, 33, 33);
+        color: var(--txt-secendery);
+    }
+}

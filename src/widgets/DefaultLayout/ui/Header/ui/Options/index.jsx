@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { OPTIONS__ITEMS } from '../../model';
-
 import stl from './index.module.scss';
+
+import { OPTIONS__ITEMS } from '@/widgets/DefaultLayout/model/index.js';
 
 const Options = () => {
     return (

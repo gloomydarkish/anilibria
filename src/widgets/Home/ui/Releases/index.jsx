@@ -15,6 +15,8 @@ export const Releases = () => {
     const getLatestReleases = async () => {
         const data = await fetchLatestReleases();
 
+        // console.log(data);
+
         setReleases(data);
     };
 

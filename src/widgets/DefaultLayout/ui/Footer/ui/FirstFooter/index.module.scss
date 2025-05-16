@@ -1,0 +1,32 @@
+.footer {
+  padding: 40px 16px 10px 16px;
+  background: var(--bg-secondary);
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      &__text {
+        display: flex;
+        flex-direction: column;
+
+        gap: 5px;
+        h2 {
+          color: var(--txt-primery);
+          font-size: 19px;
+          font-weight: 700;
+        }
+        p {
+          color: var(--txt-secendery);
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

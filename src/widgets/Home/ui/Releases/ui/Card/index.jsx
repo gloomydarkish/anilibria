@@ -16,8 +16,6 @@ const ReleasesCard = ({ item }) => {
         setIsHovered(value);
     };
 
-    console.log(item);
-
     return (
         <div
             className={stl.card}

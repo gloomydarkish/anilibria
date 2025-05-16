@@ -1,0 +1,84 @@
+.card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: var(--bg-secondary);
+    cursor: pointer;
+    &__wrapper {
+        height: 165px;
+    }
+    &__content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      height: 165px;
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--txt-primery);
+            padding-bottom: 7px;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--txt-secendery);
+            padding-bottom: 5px;
+        }
+        &__info {
+            color: var(--txt-secendery);
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            &__icon {
+                padding-right: 3px;
+            }
+            &__span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 5px;
+                margin: 0 8px;
+                font-size: 10px;
+            }
+        }
+        &__footer {
+            display: flex;
+            align-items: center;
+            &__actions {
+                display: flex;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.1);
+                height: 100%;
+                font-weight: 500;
+                font-size: 13px;
+                padding: 4px 8px;
+                color: var(--txt-primery);
+                border-radius: 7px;
+                margin-right: 5px;
+            }
+            button {
+                display: flex;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.1);
+                font-weight: 500;
+                font-size: 13px;
+                padding: 4px 8px;
+                color: var(--txt-primery);
+                border-radius: 7px;
+            }
+        }
+    }
+    &:hover {
+    }
+}
+
